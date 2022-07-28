@@ -18,3 +18,6 @@ Route::get('/post/{post}', 'PostsController@show');
 Route::get('/post/{post}/edit', 'PostsController@edit');
 Route::patch('/post/{post}/update', 'PostsController@update');
 Route::delete('/post/{post}/delete', 'PostsController@destroy');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
